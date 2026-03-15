@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Image Gallery</h1>
+
+<div class="filters">
+
+<button onclick="filterImages('all')" class="active">All</button>
+<button onclick="filterImages('nature')">Nature</button>
+<button onclick="filterImages('animals')">Animals</button>
+<button onclick="filterImages('city')">City</button>
+
+</div>
+
+<div class="gallery">
+
+<img src="images/nature1.jpg" data-category="nature">
+<img src="images/nature2.jpg" data-category="nature">
+
+<img src="images/animal1.jpg" data-category="animals">
+<img src="images/animal2.jpg" data-category="animals">
+
+<img src="images/city1.jpg" data-category="city">
+<img src="images/city2.jpg" data-category="city">
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+<span class="close">&times;</span>
+
+<button class="prev">&#10094;</button>
+
+<img class="lightbox-img">
+
+<button class="next">&#10095;</button>
+
+<div class="counter"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
